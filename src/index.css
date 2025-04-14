@@ -1,0 +1,67 @@
+:root {
+  --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(0, 0, 0, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --dark-gray: rgb(46, 46, 46);
+  --gray: rgb(168, 168, 168);
+  --light-gray: rgb(230, 230, 230);
+  --accent-red: rgba(255, 0, 0, 0.5);
+  --accent-green: #107810;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --border: 1px solid var(--dark-gray);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: var(--font-family);
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-transform: capitalize;
+  font-size: 1em;
+  letter-spacing: 2.5px;
+  font-weight: 300;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+}
+button:hover {
+  outline: none;
+  border: 1px solid --dark-gray;
+}
+button:focus,
+button:focus-visible {
+  outline: none;
+}

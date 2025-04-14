@@ -1,0 +1,53 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0; /* Розміщує по лівому краю */
+  width: 100vw;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  background-color: var(--dark-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.form_search__input {
+  background-color: transparent;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid var(--light-gray);
+  padding-left: 16px;
+  color: var(--light-gray);
+  font-size: 1em;
+  letter-spacing: 2.5px;
+  font-weight: 300;
+  font-family: inherit;
+  &:focus {
+    outline: none;
+  }
+}
+.form_search__button {
+  padding-inline: 16px;
+  border: var(--border);
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+}
+
+.form_search__input::placeholder {
+  font-size: 1em;
+  letter-spacing: 2.5px;
+  font-weight: 300;
+  font-family: inherit;
+}
